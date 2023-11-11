@@ -17,6 +17,7 @@ sql\autopecas.sql
 Para subir a API execute o comando abaixo.
 
 ```sh
+npm install
 node server.js
 ```
 
