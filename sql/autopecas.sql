@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Nov-2023 às 20:39
+-- Tempo de geração: 11-Nov-2023 às 21:31
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.0.25
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `autopecas`
 --
+CREATE DATABASE IF NOT EXISTS `autopecas` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `autopecas`;
 
 -- --------------------------------------------------------
 
