@@ -1,6 +1,6 @@
-# API PARA CADASTRO DE PRODUTOS DE AUTOPEÇAS
+# API para cadastro de produtos de autopeças
 
-API para integração com aplicativo android para matéria de dispositivos móveis
+API para integração com aplicativo android para matéria de dispositivos móveis FANAP
 
 ## Instruções
 
