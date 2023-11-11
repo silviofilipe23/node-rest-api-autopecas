@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "7515188e-97c7-44b1-8f4e-a57d1cf86b34",
+		"name": "api-android",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1455027"
+	},
+	"item": [
+		{
+			"name": "/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome_peca\": \"Pastilhas de Freio\",\r\n  \"numero_referencia\": \"789012\",\r\n  \"categoria\": \"Freios\",\r\n  \"fabricante\": \"Fabricante ABC\",\r\n  \"modelo_compativel\": \"Todos\",\r\n  \"ano_fabricacao_compativel\": \"2020-2023\",\r\n  \"material\": \"Ferro Fundido\",\r\n  \"peso\": 1.2,\r\n  \"dimensoes\": \"15x8x3\",\r\n  \"preco\": 49.99,\r\n  \"estoque_disponivel\": 50,\r\n  \"fornecedor\": \"Fornecedor XYZ\",\r\n  \"data_aquisicao\": \"2023-02-15\",\r\n  \"data_fabricacao\": \"2023-01-01\",\r\n  \"data_vencimento\": null,\r\n  \"notas_adicionais\": \"Produto de alta durabilidade\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api.autopecas/produto-dao/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api.autopecas",
+						"produto-dao",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/update/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome_peca\": \"Amortecedor Dianteiro Atualizado\",\r\n  \"numero_referencia\": \"123456\",\r\n  \"categoria\": \"Suspensão e Direção\",\r\n  \"fabricante\": \"Fabricante XYZ Atualizado\",\r\n  \"modelo_compativel\": \"Modelo ABC Atualizado\",\r\n  \"ano_fabricacao_compativel\": \"2022-2023 Atualizado\",\r\n  \"material\": \"Aço Atualizado\",\r\n  \"peso\": 6.0,\r\n  \"dimensoes\": \"25x12x6 Atualizado\",\r\n  \"preco\": 109.99,\r\n  \"estoque_disponivel\": 90,\r\n  \"fornecedor\": \"Fornecedor ABC Atualizado\",\r\n  \"data_aquisicao\": \"2023-01-01\",\r\n  \"data_fabricacao\": \"2022-12-01\",\r\n  \"data_vencimento\": null,\r\n  \"notas_adicionais\": \"Produto atualizado\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api.autopecas/produto-dao/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api.autopecas",
+						"produto-dao",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api.autopecas/produto-dao/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api.autopecas",
+						"produto-dao",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/delete/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api.autopecas/produto-dao/delete/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api.autopecas",
+						"produto-dao",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/getId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api.autopecas/produto-dao/getId?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api.autopecas",
+						"produto-dao",
+						"getId"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
