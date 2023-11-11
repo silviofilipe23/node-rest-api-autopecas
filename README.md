@@ -14,10 +14,15 @@ sql\autopecas.sql
 
 ### API
 
-Para subir a API execute o comando abaixo.
+Para instalar os pacotes e bibliotecas execute o comando abaixo.
 
 ```sh
 npm install
+```
+
+Para subir a API execute o comando abaixo.
+
+```sh
 node server.js
 ```
 
