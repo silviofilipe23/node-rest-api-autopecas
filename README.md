@@ -14,6 +14,12 @@ sql\autopecas.sql
 
 ### API
 
+Para instalar os pacotes e bibliotecas execute o comando abaixo.
+
+```sh
+npm install
+```
+
 Para subir a API execute o comando abaixo.
 
 ```sh
@@ -23,11 +29,11 @@ node server.js
 Os seguintes serviços estaram disponíveis para uso:
 
 ```url
-http://localhost:3000/api.autopecas/produto-dao/create
-http://localhost:3000/api.autopecas/produto-dao/getId?id=[id do produto]
-http://localhost:3000/api.autopecas/produto-dao/getAll
-http://localhost:3000/api.autopecas/produto-dao/update/[id do produto]
-http://localhost:3000/api.autopecas/produto-dao/delete/[id do produto]
+[GET] http://localhost:3000/api.autopecas/produto-dao/getId?id=[id do produto]
+[GET] http://localhost:3000/api.autopecas/produto-dao/getAll
+[POST] http://localhost:3000/api.autopecas/produto-dao/create
+[PUT] http://localhost:3000/api.autopecas/produto-dao/update/[id do produto]
+[DELETE] http://localhost:3000/api.autopecas/produto-dao/delete/[id do produto]
 ```
 
 ### COLLECTION POSTMAN
